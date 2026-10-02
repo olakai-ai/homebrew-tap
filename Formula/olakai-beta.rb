@@ -44,7 +44,7 @@ class OlakaiBeta < Formula
     end
   end
 
-  conflicts_with "olakai"
+  conflicts_with "olakai-ai/tap/olakai"
 
   test do
     assert_match version.to_s, shell_output("#{bin}/olakai --version")

@@ -5,21 +5,21 @@
 class OlakaiBeta < Formula
   desc "Olakai CLI for AI observability and coding agent monitoring"
   homepage "https://olakai.ai"
-  version "1.0.0-beta.5"
+  version "1.0.0-beta.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.5/olakai_1.0.0-beta.5_darwin_amd64.tar.gz"
-      sha256 "1103a12609b5bd7e574fb8ec2a35470fe21e26600deacda26babbdcb400d4fba"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.6/olakai_1.0.0-beta.6_darwin_amd64.tar.gz"
+      sha256 "d544695a734d4f203828d1219a2324da2413f9b3535d576dca9a75189788f3b9"
 
       define_method(:install) do
         bin.install "olakai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.5/olakai_1.0.0-beta.5_darwin_arm64.tar.gz"
-      sha256 "a3e220a98f2db84585ed150ab27401157844ce8ed4cd72d5825f42702ee5de1f"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.6/olakai_1.0.0-beta.6_darwin_arm64.tar.gz"
+      sha256 "c0f4bfe58258a9ad93c57c02a8e3ff1661942f68a14e7f6b375b93ed8669af6a"
 
       define_method(:install) do
         bin.install "olakai"
@@ -29,15 +29,15 @@ class OlakaiBeta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.5/olakai_1.0.0-beta.5_linux_amd64.tar.gz"
-      sha256 "1f20b85c18dd344987c89c52d518a98a6c2cc57f101954a282c43a4aa9bd1843"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.6/olakai_1.0.0-beta.6_linux_amd64.tar.gz"
+      sha256 "ca96397812da8f3025501b51be4ccc95acbff558c229dd4e1ce9259c60de1437"
       define_method(:install) do
         bin.install "olakai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.5/olakai_1.0.0-beta.5_linux_arm64.tar.gz"
-      sha256 "9a1e65cf2931c774abb76d50eab01e1cb965b0fa2d100f49558bf1ad452ea93d"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.0-beta.6/olakai_1.0.0-beta.6_linux_arm64.tar.gz"
+      sha256 "7bd7e6a3ce446afdb85ff395f3e3d225e08e3cc654955d4bf589bb3aa3e963fe"
       define_method(:install) do
         bin.install "olakai"
       end

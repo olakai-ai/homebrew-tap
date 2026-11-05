@@ -5,21 +5,21 @@
 class Olakai < Formula
   desc "Olakai CLI for AI observability and coding agent monitoring"
   homepage "https://olakai.ai"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0/olakai_1.0.0_darwin_amd64.tar.gz"
-      sha256 "2b0e1be18e80fec172b7ba6cf4047480969b5818a4041aa703059b95ea009d35"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.1/olakai_1.0.1_darwin_amd64.tar.gz"
+      sha256 "7270ffbb882aa68f8e9693c875d5ef9a146ed2cc4197011fc2c17e7261693690"
 
       define_method(:install) do
         bin.install "olakai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0/olakai_1.0.0_darwin_arm64.tar.gz"
-      sha256 "2d1edef0baf9f30481601ef065ffd775b0e7b64a231df1d81e40cc4343b54362"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.1/olakai_1.0.1_darwin_arm64.tar.gz"
+      sha256 "211b2c40ac393e3c38fe29f0a60733d75e6a6e9ab162482f6af233e94398e67a"
 
       define_method(:install) do
         bin.install "olakai"
@@ -29,15 +29,15 @@ class Olakai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0/olakai_1.0.0_linux_amd64.tar.gz"
-      sha256 "1b52e3e4087d4f13144284c1faaf1511ac72d01dcaa626574570077c18d69e73"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.1/olakai_1.0.1_linux_amd64.tar.gz"
+      sha256 "86f81cd8811427349d4b20c8496cced4a7f8c534ca6803bc94746550119fa26a"
       define_method(:install) do
         bin.install "olakai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://get.olakai.ai/cli/releases/go-v1.0.0/olakai_1.0.0_linux_arm64.tar.gz"
-      sha256 "64c047535b0dac28d37f7fcfd64f40570af2ac169da94ce5163fa8d328f8f6de"
+      url "https://get.olakai.ai/cli/releases/go-v1.0.1/olakai_1.0.1_linux_arm64.tar.gz"
+      sha256 "2bdcb7c46746869e3b05ea6df7f30039915c830e59b14949feef03b3e328bfa7"
       define_method(:install) do
         bin.install "olakai"
       end
